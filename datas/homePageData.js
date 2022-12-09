@@ -27,26 +27,6 @@ export const data = [
         image: "../images/movie5.webp",
         type: ["ИНЭЭДЭМ", "ГЭР БҮЛ"],
       },
-      {
-        id: 111,
-        image: "../images/movie1.webp",
-      },
-      {
-        id: 211,
-        image: "../images/movie2.webp",
-      },
-      {
-        id: 311,
-        image: "../images/movie3.webp",
-      },
-      {
-        id: 411,
-        image: "../images/movie4.webp",
-      },
-      {
-        id: 511,
-        image: "../images/movie5.webp",
-      },
     ],
   },
   {
