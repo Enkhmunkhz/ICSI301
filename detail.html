@@ -11,14 +11,17 @@
     <title>movie max player</title>
   </head>
   <body>
-    <div>
-        <iframe style="position: relative;" width="1158" height="690" src="https://www.youtube.com/embed/V0FIUz5OpT4" title="MISS SHERLOCK Official Trailer (HD) Japanese HBO Series" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="plyr_video_wrapper">
+      <video class="video-player"  controls>
+        <source src="movie.mp4" type="video/mp4">
+    
+      </video>
     </div>
     <div class="area"> </div>
 
     <div class="sideCont" id="side">
-      <div id="text">
-        <h2>Sherlock holmes</h2>
+      <div id="description">
+        <h2>Шерлок Холмес</h2>
         <h5 style="text-align: left; padding-left: 3em;">2018 оны 5 сар 18</h5>
         <p style="text-align: left; padding-left: 1em;">  ohn Watson. In 1890, eccentric detective Holmes and 
           his companion Watson are hired by a secret 
@@ -27,7 +30,8 @@
       </div>
       
       <div id="episodes" style="display: none;">
-        <h2>sadsdaasSherlock holmes</h2>
+        <h2>Анги</h2>
+        
       </div>
       
       <div id="comment" style="display: none;">
@@ -49,11 +53,11 @@
         <li class="has-subnav">
               <button  class="featuredBtn" id="buttonEpisode" title="episodes" onclick="episodes(); return false"><i class="fa fa-list fa-2x"></i></button>
         </li>
-
+<!--
         <li class="has-subnav">
               <button  class="featuredBtn" id="buttonComment" title="comments" onclick="comment();"><i class="fa fa-comments" aria-hidden="true"></i></button>
         </li>
-
+-->
     </ul>
 
 <!--
@@ -96,21 +100,37 @@ function arrow() {
 */
 
 function text() {
-  var x = document.getElementById("text");
+  var x = document.getElementById("episodes");
+  if (!x.style.display | x.style.display == "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+
+  var x = document.getElementById("description");
   if (!x.style.display | x.style.display == "none") {
     x.style.display = "block";
-  } 
+  } else {
+    x.style.display = "block";
+  }
 }
 
 function episodes() {
+  var x = document.getElementById("description");
+  if (!x.style.display | x.style.display == "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+
   var x = document.getElementById("episodes");
   if (!x.style.display | x.style.display == "none") {
     x.style.display = "block";
   } else {
-    x.style.display = "none";
+    x.style.display = "block";
   }
 }
-
+/*
 function comment() {
   var x = document.getElementById("comment");
   if (!x.style.display | x.style.display == "none") {
@@ -119,7 +139,7 @@ function comment() {
     x.style.display = "none";
   }
 }
-
+*/
 function close() {
   var x = document.getElementById("");
   if (! x.style.display === "none") {
