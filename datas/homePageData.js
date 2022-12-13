@@ -1,8 +1,4 @@
-eps_num: ["16"],
-filter:["olon angit"],
-about: [""],
-type: [""],
-  
+<!-- eps_num: ["16"], filter:["olon angit"], about: [""], type: [""], -->
 export const data = [
   {
     category: "СҮҮЛД ҮЗСЭН",
