@@ -15,7 +15,7 @@ export class RenderHome {
               .map(
                 (el) =>
                   `<div id="movie-no-${el.id}">
-                      <a class="no-dec" href="./detail-${el.id}.html">
+                    <a class="no-dec" href="./detail.html">
                         <div class="movie-img">
                           <div class="background_list" style="background:url(${
                             el.image
