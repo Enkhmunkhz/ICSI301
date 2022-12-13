@@ -5370,7 +5370,7 @@
     (w.isWindow = y),
     (w.camelCase = G),
     (w.type = x),
-    (w.now = Date.now),
+    (w.now = Date.now), 
     (w.isNumeric = function (e) {
       var t = w.type(e);
       return ("number" === t || "string" === t) && !isNaN(e - parseFloat(e));
