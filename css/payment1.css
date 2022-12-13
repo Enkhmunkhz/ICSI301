@@ -12,11 +12,11 @@ body {
 
 .header {
     width: 100%;
-    height: 80px;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background: #000;
+    background: #19222d;
     border-bottom: 1px solid aqua;
 }
 
@@ -32,8 +32,8 @@ body {
 }
 
 .logoImage {
-    width: 30px;
-    height: 30px;
+    width: 10vw;
+    height: 5vh;
     object-fit: cover;
 }
 
@@ -115,88 +115,73 @@ body {
 .section {
     width: 100%;
     height: 100%;
-    background: #000;
+    background: #19222d;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
 .first {
-    width: 20%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    transform: translate(80px, -120px);
 }
 
 .btn {
-    width: 90%;
-    margin: 0 auto;
-    font-size: 22px;
+    width: 273px;
+    height: 72px;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
     color: rgb(255, 255, 255);
     background: transparent;
     text-transform: uppercase;
-    padding: 15px 0;
     cursor: pointer;
-    border-image: conic-gradient( from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
-    animation: 10s rotate linear infinite;
-}
-
-@keyframes rotate {
-    to {
-        --angle: 360deg;
-    }
-}
-
-@property --angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
+    border-radius: 12px;
+    /*border-image: linear-gradient( rgba(255, 255, 255, 1), rgb(	254,	213,s	48), rgba(244, 174, 183, 0.8125), rgba(246, 135, 175, 1), rgba(228, 93, 126, 0.5885), rgba(223, 59, 118, 0.93), rgba(255, 0, 61, 1), rgba(255, 4, 4, 0)) 3;*/
+    transform: translate(100px, 100px);
+    border-color: #fed530;
 }
 
 .second {
-    margin-top: 120px;
-    width: 63%;
+    margin-top: 50px;
+    width: 50%;
     height: 100%;
     display: flex;
-    flex-direction: column;
     gap: 30px;
     padding-bottom: 120px;
-    margin-bottom: 100px;
-    transform: translate(-150px, -80px);
-    border: 1px solid #ffffff;
-    border-radius: 18px;
+    margin-bottom: 300px;
 }
 
 .create {
     width: 100%;
     text-align: center;
-    font-size: 36px;
+    font-size: 45px;
     font-weight: 700;
     color: rgb(255, 255, 255);
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.part {
-    display: flex;
+    margin-top: 50px;
 }
 
 .part1 {
     width: 100%;
-    display: grid;
+    display: flex;
+    
     align-items: center;
     gap: 30px;
+    transform: translate(-280px);
 }
 
 .part2 {
     width: 100%;
     display: grid;
-    gap: 45px;
-    transform: translate(-80px, 0);
+    gap: 20px;
+    transform: translate(-220px, 20px);
 }
 
 .part3 {
@@ -208,16 +193,25 @@ body {
     transform: translate(-80px, 10px);
 }
 
-.text {
+.text1 {
     width: 100%;
     font-family: sans-serif;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: rgb(255, 255, 255);
+    font-size: 36px;
+    line-height: 46.87px;
+    color: rgba(255, 248, 188, 1);
     text-transform: uppercase;
+    text-align: right;
+}
+
+.text2 {
+    width: 70%;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33.85px;
+    color: rgba(255, 255, 255, 1);
     text-align: left;
-    margin-left: 80px;
 }
 
 .bank {
