@@ -85,7 +85,6 @@ p {
 
 .movies {
   display: flex;
-  overflow-x: hidden;
   transition: 200ms;
   gap: 0.5%;
 }

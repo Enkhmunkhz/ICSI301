@@ -2,7 +2,7 @@ export class RenderHome {
   constructor(data) {
     this.data = data;
   }
-  render() {
+   render() {
     const dom = this.data.map(
       (item, index) =>
         `

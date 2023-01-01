@@ -1,13 +1,12 @@
 import { RenderHome } from "./renderHome.js";
-import { data } from "../datas/homePageData.js";
 
 let main = document.getElementById("movie_container");
-
-const home_data = new RenderHome(data);
-
-const home_dom = home_data.render();
-
-home_dom.map((item) => {
-  main.insertAdjacentHTML('beforeend', item);
-})
-
+await fetch("https://api.jsonbin.io/v3/b/63b15ac7dfc68e59d575669a")
+  .then((res) => res.json())
+  .then((data) =>
+    main.insertAdjacentHTML(
+      "beforeend",
+      new RenderHome(data.record.categories).render()
+    )
+  )
+  .catch((err) => console.log(err, "gg"));

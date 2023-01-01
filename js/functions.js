@@ -1,28 +1,32 @@
-let position = 0;
-let len = document.querySelectorAll(".hi").length;
-let width = document.querySelectorAll(".background_list")[0].style.width;
-console.log(width);
-let i = 0;
+let position = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let index = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 async function previous(id) {
-  width = document.querySelectorAll(".background_list")[0].style.width;
-  console.log(width);
-  if (i > 0) {
-    i--;
-    if (position !== 0) {
-      position += 200;
-      document.getElementById(`slide_show_${id}`).style.transform =
-        "translateX(" + position + "px)";
+  current_item = document.getElementById(`slide_show_${id}`);
+  let width = document.getElementsByClassName("movie-img")[0].clientWidth;
+  if (index[id] > 0) {
+    index[id]--;
+    if (Math.abs(position[id]) !== 0) {
+      position[id] += width;
+      current_item.style.transform = "translateX(" + position[id] + "px)";
     }
   }
 }
 async function next(id) {
-  width = document.querySelectorAll(".background_list")[0].style.width;
-  console.log(width);
-  if (i < len) {
-    position -= 200;
-    document.getElementById(`slide_show_${id}`).style.transform =
-      "translateX(" + position + "px)";
-    i++;
+  current_item = document.getElementById(`slide_show_${id}`);
+  let width = document.getElementsByClassName("movie-img")[0].clientWidth;
+  let count = current_item.childNodes.length - 2;
+  let carousel_width = current_item.clientWidth;
+  if (
+    Math.abs(position[id]) >
+      carousel_width -
+        current_item.clientWidth *
+          (window.innerWidth / current_item.clientWidth) ||
+    count < window.innerWidth / width
+  ) {
+  } else if (index[id] < count) {
+    position[id] -= width;
+    current_item.style.transform = "translateX(" + position[id] + "px)";
+    index[id]++;
   }
 }
 
