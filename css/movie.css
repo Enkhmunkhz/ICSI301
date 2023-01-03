@@ -1,35 +1,56 @@
 body{
     background-color: #19222c;
     margin: 0;
+    gap: 3vh;
 }
 
 .container_head{
     display: flex;
     flex-direction: column;
-    gap: 3vh;
 }
 
-.header_movie{
+.dropdowns{
     display: flex;
-    grid-area: header;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    width: 50vw;
+    height: 5vh;
+    padding-bottom: 3vh;
 }
 
-
-.header_logo {
-    width: 100%;
-    height: 15vh;
+.dropdowns>div{
     display: flex;
+    flex-direction: row;
+    border: 2px solid #FED530;
+    border-radius: 8px;
+    margin-left: 2vw;
     align-items: center;
     justify-content: space-between;
+    padding-left: 1vw;
+}
+
+.dropdowns .angilal{
+    width: 8vw;
+}
+
+.dropdowns .year{
+    width: 5vw;
+}
+
+.dropdowns>div>p{
+    color: #fff;
+}
+
+.dropdowns>div>img{
+    width: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 2vh;
 }
 
 
-.head_img {
-    width: 25%;
-    height: 100%;
+.movie_buren{
     display: flex;
-    align-items: center;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
 }

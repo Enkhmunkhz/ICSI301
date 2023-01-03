@@ -1,6 +1,6 @@
-import { RenderHome } from "./renderHome.js";
+import { renderMovie } from "../modules/renderMovie.js";
 
-let main = document.getElementById("movie_container");
+let main = document.getElementById("kino_container");
 get_data();
 async function get_data() {
   await fetch("https://api.jsonbin.io/v3/b/63b1a2ba01a72b59f23dd533")
@@ -8,8 +8,8 @@ async function get_data() {
     .then((data) =>
       main.insertAdjacentHTML(
         "beforeend",
-        new RenderHome(data.record.categories).render()
+        new renderMovie(data.record.categories).render()
       )
     )
-    .catch((err) => console.log(err, "gg"));
+    // .catch((err) => console.log(err, "gg"));  
 }

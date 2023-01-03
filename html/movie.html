@@ -1,25 +1,29 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="mn">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Put your description here." />
-    <link rel="stylesheet" href="../css/movie.css" />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Put your description here." >
+    <link rel="stylesheet" href="../css/movie.css" >
+    <link rel="stylesheet" href="../css/header_footer.css">
     <script
       src="https://kit.fontawesome.com/c43aa37865.js"
       crossorigin="anonymous"
       async
     ></script>
-    <script type="module" src="../js/movie.js" defer></script>
-    <title>MovieMax movie</title>
+    <script type="module" src="../js/moviePage.js"></script>
+    <script type="text/javascript" src="../js/functions.js" defer></script>
+    <title>MovieMax</title>
   </head>
   <body>
     <div class="container_head">
-      <header class="header_movie">
-        <section class="header_movie">
+      <header class="header">
+        <div class="header_main">
           <div class="header_logo">
-            <img src="../images/logo.webp" alt="MovieMax" />
+            <div class="head_img">
+              <img src="../images/logo.webp" alt="MovieMax" />
+            </div>
             <div class="links">
               <a href="./home.html">Эхлэл</a>
               <a href="./movie.html">Бүрэн хэмжээний</a>
@@ -28,28 +32,57 @@
               <a href="./payment.html">Эрх нээлгэх</a>
             </div>
           </div>
+
           <div class="dropdown">
-            <!-- <button class="profile"> -->
-            <i class="fas fa-user"></i>
-            <!-- </button> -->
-            <!-- <div class="dropdown-content">
-                            <a href="./settings.html">Тохиргоо</a>
-                            <a href="./login.html">Гарах</a>
-                        </div> -->
+            <img src="../images/user.svg" alt="user" onclick="show_dropdown()"/>
+            <div class="dropdown-content" id="dropdown_content">
+              <a href="./settings.html">
+                <p>Тохиргоо</p>
+              </a>
+              <a href="../index.html">
+                <p>Гарах</p>
+              </a>
+            </div>
           </div>
-        </section>
+        </div>
       </header>
-      <div class="movie_list">
-        <div id="kino_container" />
+    </div>
+    <!-- <div class="dropdowns">
+      <div class="angilal">
+        <p>Ангилал</p>
+        <img src="../images/dropdown.svg" alt="dropdown" onclick="show_dropdown()"/>
+        <div class="dropdown-content" id="dropdown_content">
+          <a href="./settings.html">
+            <p>Инээдмийн</p>
+          </a>
+          <a href="../index.html">
+            <p>Адал явдал</p>
+          </a>
+        </div>
+      </div>
+      <div class="year">
+        <p>Он</p>
+        <img src="../images/dropdown.svg" alt="dropdown" onclick="show_dropdown()"/>
+        <div class="dropdown-content" id="dropdown_content">
+          <a href="./settings.html">
+            <p>Тохиргоо</p>
+          </a>
+          <a href="../index.html">
+            <p>Гарах</p>
+          </a>
+        </div>
+      </div>
+    </div> -->
+      <div class="kino_list">
+        <div id="kino_container"></div>
       </div>
       <footer class="footer">
         <img src="../images/logo.webp" alt="logo" />
         <address>
-          Байршил: <span>Чингисийн өргөн чөлөө, СБД, Улаанбаатар</span> <br />
-          Имэйл: <span>moviemax@mo.mn</span> <br />
+          Байршил: <span>Чингисийн өргөн чөлөө, СБД, Улаанбаатар</span> <br>
+          Имэйл: <span>moviemax@mo.mn</span> <br>
           Утас: <span>94399344</span>
         </address>
       </footer>
-    </div>
   </body>
-</html>
+</html> -->

@@ -1,0 +1,173 @@
+@media(min-width:1024px){ 
+  .header_logo {
+    height: 12vh;
+  }
+  
+  .header_main{
+    height: 12vh;
+  }
+
+  .head_img {
+    width: 20%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .links > a {
+    font-size: large;
+    font-weight: 600; 
+  }
+  
+  .links {
+      width: 55vw;
+      padding-right: 17vw;
+      display: flex;
+      justify-content: space-evenly;
+  }
+}
+
+@media(max-width:1024px) {
+  .links > a {
+    font-size: medium;
+    font-weight: 600; 
+  }
+  
+  .header_logo{
+    height: 8vh;
+  }
+
+  .head_img{
+    width: 20vh;
+  }
+
+  .head_img > img {
+    width: 80%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+  }
+
+  .links {
+    width: 55vw;
+    display: flex;
+    padding-left: 5vw;
+    padding-right: 15vw;
+    justify-content: space-between;
+  }
+}
+
+@media(max-width:940px){
+  .head_img > img{
+    width: 100%;
+  }
+  .links > a {
+    font-size: smaller;
+    font-weight: 400; 
+  }
+  .links {
+    width: 60vw;
+    padding-right: 8vw;
+}
+}
+
+@media(max-width:735px){
+  .links > a {
+    font-size: small;
+    font-weight: 400;
+  }
+
+}
+
+@media(max-width: 700px) {
+  .links {
+    width: 60vw;
+    display: flex;
+    padding-right: 5vw;
+  }
+}
+
+@media(max-width: 550px){
+  .head_img{
+    width: 15vw;
+  }
+  .head_img > img{
+    width: 100%;
+  }
+  .links {
+    width: 65vw;
+    display: flex;
+    padding-right: 4vw;
+  }
+  .links > a{
+    font-weight: 200;
+  }
+}
+
+.header_main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  column-gap: 2%;
+}
+
+.header {
+  background-color: #222E3C;
+  display: flex;
+  grid-area: header;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.footer {
+  background-color: #222E3C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1%;
+}
+
+.header_logo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer > address {
+  color: white;
+}
+
+.links > a{
+  color: white;
+  text-decoration: none;
+     
+  font-family: sans-serif;
+}
+
+.no-dec {
+  text-decoration: none;
+}
+
+.links > a:hover {
+  text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #19222c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #243344;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2f4156;
+}

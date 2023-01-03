@@ -41,36 +41,50 @@ form {
   border: 1px solid gray;
 }
 
-.loginButtonContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.signUpButtonContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.loginButtonContainer > a > input {
+.loginButtonContainer> div {
   margin-top: 2vh;
   width: 8vw;
   height: 5vh;
   background: linear-gradient(to right, #556fff, #ff798e, #556fff);
   background-size: 200% auto;
   border-radius: 5px;
+  border: 2px solid #000;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginButtonContainer{
+  display: flex;
+  justify-content: space-between;
 }
 
-.signUpButtonContainer > a > input {
+.loginButtonContainer > div > a{
+  text-decoration: none;
+  color: black;
+}
+
+.signUpButtonContainer {
   margin-top: 3vh;
-  width: 12vw;
   height: 5vh;
+  width: 12vw;
   background: linear-gradient(to right, #556fff, #ff798e, #556fff);
   background-size: 200% auto;
   border-radius: 5px;
-  cursor: pointer;
+  border: 2px solid #000;
+  cursor: pointer; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aa{
+  display: flex;
+  justify-content: center;
+}
+.signUpButtonContainer > a{
+  text-decoration: none;
+  color: #000;
 }
 
 .forgetpass > a {
