@@ -41,7 +41,7 @@ export class RenderHome {
           </div>
           </div>
         `
-    );
+    ).join("");
     return dom;
   }
 }

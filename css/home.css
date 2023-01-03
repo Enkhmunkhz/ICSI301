@@ -49,9 +49,6 @@ p {
 }
 
 
-.test {
-  width: 100%;
-}
 
 
 
@@ -72,9 +69,47 @@ p {
   gap: 0.5%;
 }
 
+@media(min-width:1230px) {
+  .background_list{
+    height: 45vh;
+  }
+  .slider_button_container {
+    bottom: 190px;
+  }
+}
+@media(max-width:1230px){
+  .background_list{
+    height: 35vh;
+  }
+  .movie-img > div > .types > .element {
+    font-size: 0.8rem;
+  }
+  .slider_button_container {
+    bottom: 140px;
+  }
+}
+
+@media(max-width:845px){
+  .background_list{
+    height: 28vh;
+  }
+  .movie-img > div > .types > .element {
+    font-size: 0.5rem;
+  }
+  .movies{
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .next_click, .previous_click{
+    display: none;
+  }
+  
+}
 .background_list {
   width: 15vw;
-  height: 45vh;
+  min-width: 120px;
+  display: flex;
+  flex-flow: column wrap;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -117,11 +152,6 @@ p {
   height: 100%;
 }
 
-.background_list {
-  display: flex;
-  flex-flow: column wrap;
-}
-
 @keyframes sliding {
   0% {
     transform: translateX(0px);
@@ -156,7 +186,6 @@ h2 {
 .slider_button_container {
   width: 100vw;
   position: relative;
-  bottom: 190px;
   display: flex;
   justify-content: space-between;
 }
