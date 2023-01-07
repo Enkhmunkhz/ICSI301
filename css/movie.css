@@ -150,3 +150,9 @@ body{
     align-items: flex-start;
     padding-left: 20px;
   }
+
+.movie-about{
+    margin-top: -15px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
