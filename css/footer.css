@@ -1,0 +1,17 @@
+.footer {
+  background-color: #222E3C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1%;
+}
+
+.footer > address {
+  color: white;
+}
+
+.links > a{
+  color: white;
+  text-decoration: none;    
+  font-family: sans-serif;
+}

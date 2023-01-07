@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Put your description here." >
+    <link rel="stylesheet" href="../css/movie.css" >
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <script
+      src="https://kit.fontawesome.com/c43aa37865.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script type="module" src="../js/renderSeries.js"></script>
+    <script type="text/javascript" src="../js/functions.js" defer></script>
+    <title>MovieMax</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_main">
+        <div class="header_logo">
+          <div class="head_img">
+            <img src="../images/logo.webp" alt="MovieMax" />
+          </div>
+          <div class="links">
+            <a href="./home.html">Эхлэл</a>
+            <a href="./movie.html">Бүрэн хэмжээний</a>
+            <a href="./series.html">Цуврал</a>
+            <a href="./favorite.html">Дуртай</a>
+            <a href="./payment.html">Эрх нээлгэх</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <img src="../images/user.svg" alt="user" onclick="show_dropdown()"/>
+          <div class="dropdown-content" id="dropdown_content">
+            <a href="./settings.html">
+              <p>Тохиргоо</p>
+            </a>
+            <a href="../index.html">
+              <p>Гарах</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+      
+    
+    <div class="series_list">
+      <main id="main"></main>
+    </div>
+
+
+    <footer class="footer">
+      <img src="../images/logo.webp" alt="logo" />
+      <address>
+        Байршил: <span>Чингисийн өргөн чөлөө, СБД, Улаанбаатар</span> <br>
+        Имэйл: <span>moviemax@mo.mn</span> <br>
+        Утас: <span>94399344</span>
+      </address>
+    </footer>
+  </body>
+</html>

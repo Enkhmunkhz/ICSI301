@@ -20,14 +20,7 @@ export class RenderHome {
                           <div class="background_list" style="background:url(${
                             el.image
                           })">
-                            <div class="types">
-                              ${el?.type
-                                ?.map(
-                                  (element) =>
-                                    `<span class="element">${element}</span>`
-                                )
-                                .join(" ")}
-                        </div>
+                            
                       </div>
                   </div>
                 </a>
