@@ -141,3 +141,12 @@ body{
     display: flex;
     justify-content: center;
 }
+
+.series_list {
+    display: flex;
+    overflow-x: hidden;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
