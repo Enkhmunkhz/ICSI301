@@ -5,6 +5,7 @@ class WatchLaterList {
         this.filtera = movies.filtera;
         this.movie = movies;
     }
+    
     render_product_card() {
             return `
             <div class="fullMovie">
