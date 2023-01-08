@@ -1,3 +1,3 @@
 import SeriesMovie from "../modules/seriesMovie.js";
-const seriesMovie = new SeriesMovie("https://api.jsonbin.io/v3/b/63b9940515ab31599e2ff42e");
+const seriesMovie = new SeriesMovie("https://api.jsonbin.io/v3/b/63ba7cdc01a72b59f244ec4b");
 seriesMovie.Download("main");

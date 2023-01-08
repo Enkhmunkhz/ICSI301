@@ -38,3 +38,21 @@ async function show_dropdown() {
     dropdown.style.display = "block";
   }
 }
+
+async function show_dropdowns() {
+  let dropdown = document.getElementById("dropdown_contents");
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+}
+
+async function shows_dropdown() {
+  let dropdown = document.getElementById("dropdowns_content");
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+}

@@ -13,7 +13,7 @@
       crossorigin="anonymous"
       async
     ></script>
-    <script type="module" src="../js/renderMovie.js"></script>
+    <script type="module" src="../js/parameter.js"></script>
     <script type="text/javascript" src="../js/functions.js" defer></script>
     <title>MovieMax</title>
   </head>
@@ -34,8 +34,8 @@
         </div>
 
         <div class="dropdown">
-          <img src="../images/user.svg" alt="user" onclick="show_dropdown()"/>
-          <div class="dropdown-content" id="dropdown_content">
+          <img src="../images/user.svg" alt="user" onclick="show_dropdowns()"/>
+          <div class="dropdown-content" id="dropdown_contents">
             <a href="./settings.html">
               <p>Тохиргоо</p>
             </a>
@@ -46,32 +46,68 @@
         </div>
       </div>
     </header>
-    <!-- <div class="dropdowns">
+    <div class="dropdowns">
       <div class="angilal">
         <p>Ангилал</p>
-        <img src="../images/dropdown.svg" alt="dropdown" onclick="show_dropdown()"/>
-        <div class="dropdown-content" id="dropdown_content">
+        <img src="../images/dropdown.svg" alt="dropdown" onclick="shows_dropdown()"/>
+        <div class="dropdown-contents" id="dropdowns_content">
           <a href="./settings.html">
-            <p>Инээдмийн</p>
+            <p>Гэр бүл</p>
           </a>
           <a href="../index.html">
-            <p>Адал явдал</p>
+            <p>Инээдэм</p>
+          </a>
+          <a href="./settings.html">
+            <p>ЛГБТ+</p>
+          </a>
+          <a href="../index.html">
+            <p>Нэвтрүүлэг</p>
+          </a>
+          <a href="./settings.html">
+            <p>Өсвөр нас</p>
+          </a>
+          <a href="../index.html">
+            <p>Романтик</p>
+          </a>
+          <a href="./settings.html">
+            <p>Уран зөгнөл</p>
+          </a>
+          <a href="../index.html">
+            <p>Уянга</p>
           </a>
         </div>
       </div>
       <div class="year">
         <p>Он</p>
         <img src="../images/dropdown.svg" alt="dropdown" onclick="show_dropdown()"/>
-        <div class="dropdown-content" id="dropdown_content">
-          <a href="./settings.html">
-            <p>Тохиргоо</p>
+        <div class="dropdown-contents" id="dropdown_content">
+          <a href="#">
+            <p class="year-list" onclick="location.href='movie.html?year=all'">Бүгд</p>
           </a>
-          <a href="../index.html">
-            <p>Гарах</p>
+          <a href="#">
+            <p class="year-list" onclick="location.href='movie.html?year=2022'">2022</p>
+          </a>
+          <a href="#">
+            <p class="year-list" onclick="location.href='movie.html?year=2021'">2021</p>
+          </a>
+          <a href="#">
+            <p class="year-list" onclick="location.href='movie.html?year=2020'">2020</p>
+          </a>
+          <a href="#">
+            <p class="year-list" onclick="location.href='movie.html?year=2019'">2019</p>
+          </a>
+          <a href="#">
+            <p class="year-list" onclick="location.href='movie.html?year=2018'">2018</p>
+          </a>
+          <a href="#">
+            <p class="year-list" onclick="location.href='movie.html?year=2017'">2017</p>
+          </a>
+          <a href="#">
+            <p class="year-list" onclick="location.href='movie.html?year=others'">Бусад</p>
           </a>
         </div>
       </div>
-    </div> -->
+    </div>
       
     
     <div class="series_list">

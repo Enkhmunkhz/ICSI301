@@ -284,7 +284,7 @@
     "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500"
  },
   {
-    "id": 22,
+    "id": 26,
     "image": "../images/movie16.webp",
     "eps_num": 16,
     "type": ["ИНЭЭДЭМ", "ГЭМТ ХЭРЭГ"],
@@ -295,7 +295,7 @@
     "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500"
  },
   {
-    "id": 23,
+    "id": 27,
     "image": "../images/movie17.webp",
     "eps_num": 16,
     "type": ["УРАН ЗӨГНӨЛ", "РОМАНТИК", "ӨСВӨР НАС"],
@@ -306,7 +306,7 @@
     "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500"
  },
   {
-    "id": 24,
+    "id": 28,
     "image": "../images/movie18.webp",
     "eps_num": 16,
     "type": ["УРАН ЗӨГНӨЛ", "РОМАНТИК", "ӨСВӨР НАС"],
@@ -317,7 +317,7 @@
     "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500"
  },
   {
-    "id": 25,
+    "id": 29,
     "image": "../images/movie19.webp",
     "eps_num": 16,
     "type": ["УРАН ЗӨГНӨЛ", "РОМАНТИК", "ӨСВӨР НАС"],
@@ -328,7 +328,7 @@
     "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500"
  },
   {
-    "id": 26,
+    "id": 30,
     "image": "../images/movie20.webp",
     "eps_num": 16,
     "type": ["УРАН ЗӨГНӨЛ", "РОМАНТИК", "ӨСВӨР НАС"],
@@ -339,7 +339,7 @@
     "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500"
  },
   {
-    "id": 27,
+    "id": 31,
     "image": "../images/movie31.webp",
     "eps_num": 16,
     "type": ["РОМАНТИК", "ЛГБТ+"],
@@ -350,7 +350,7 @@
     "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500"
  },
   {
-    "id": 28,
+    "id": 32,
     "image": "../images/movie32.webp",
     "eps_num": 16,
     "type": ["ГЭМТ ХЭРЭГ", " УЯНГА"],
@@ -361,7 +361,7 @@
     "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500"
  },
   {
-    "id": 29,
+    "id": 33,
     "image": "../images/movie33.webp",
     "eps_num": 16,
     "type": ["НЭВТРҮҮЛЭГ"],
@@ -372,7 +372,7 @@
     "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500"
  },
   {
-    "id": 30,
+    "id": 34,
     "image": "../images/movie34.webp",
     "eps_num": 16,
     "type": ["АДАЛ ЯВДАЛ", "УЯНГА"],
@@ -383,7 +383,7 @@
     "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500"
  },
   {
-    "id": 31,
+    "id": 35,
     "image": "../images/movie35.webp",
     "eps_num": 16,
     "type": ["ГЭМТ ХЭРЭГ", "УЯНГА"],
@@ -394,7 +394,7 @@
     "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500"
  },
   {
-    "id": 32,
+    "id": 36,
     "image": "../images/movie36.webp",
     "eps_num": 16,
     "type": ["ХҮҮХДИЙН", "ГЭР БҮЛ"],

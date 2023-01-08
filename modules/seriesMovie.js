@@ -2,7 +2,6 @@ import { movieDetail } from "./movieDetail.js";
 
 class SeriesMovieItems {
   constructor(movies) {
-    this.id = movies.id;
     this.image = movies.image;
     this.filtera = movies.filtera;
     this.a = movies;
@@ -10,7 +9,7 @@ class SeriesMovieItems {
   Render() {
     return `<div class="fullMovie">
       <a class="no_dec" href="./detail.html">
-        <div class="movie-img-${this.id}">
+        <div class="movie-img">
           <div class="background_list" style="background:url(
             ${this.image}
           );">

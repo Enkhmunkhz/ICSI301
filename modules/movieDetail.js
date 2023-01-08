@@ -1,6 +1,5 @@
 export class movieDetail{
     constructor(movie){
-        this.id = movie.id;
         this.eps_num = movie.eps_num;
         this.name = movie.name;
         this.year = movie.year;
