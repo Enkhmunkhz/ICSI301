@@ -1,4 +1,4 @@
-.footer {
+footer {
   background-color: #222E3C;
   display: flex;
   justify-content: space-between;
@@ -7,7 +7,7 @@
   margin-top: 3%;
 }
 
-.footer > address {
+footer > address {
   color: white;
 }
 
