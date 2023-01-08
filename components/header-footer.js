@@ -17,7 +17,7 @@ class header extends HTMLElement {
                 <a href="./payment.html">Эрх нээлгэх</a>
             </div>
             </div>
-
+            <watch-list onclick="location.href='./watch-later.html'"></watch-list>
             <div class="dropdown">
             <img src="../images/user.svg" alt="user" onclick="show_dropdowns()"/>
             <div class="dropdown-content" id="dropdown_contents">

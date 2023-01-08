@@ -1,6 +1,6 @@
 import FullMovie from "../modules/fullMovie.js";
 
-const movieAll = new FullMovie("https://api.jsonbin.io/v3/b/63ba7cdc01a72b59f244ec4b");
+const movieAll = new FullMovie("https://api.jsonbin.io/v3/b/63bb026c01a72b59f2455584");
 const movie2022 = new FullMovie("https://api.jsonbin.io/v3/b/63ba790501a72b59f244e960");
 const movie2021 = new FullMovie("https://api.jsonbin.io/v3/b/63ba7a0415ab31599e309dad");
 const movie2020 = new FullMovie("https://api.jsonbin.io/v3/b/63ba7a6915ab31599e309dfe");
@@ -60,7 +60,6 @@ export default function getCategoryData(myParam) {
       console.log(myParam);
       break;
     default:
-      console.log(myParam);
       movieAll.Download("main");
       break;
   }

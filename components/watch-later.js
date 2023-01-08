@@ -1,24 +1,26 @@
-class WatchLaterMovie {
-    constructor(s){
-
+import "./add-watch-comp.js"
+class WatchLaterList {
+    constructor(movies){
+        this.image = movies.image;
+        this.filtera = movies.filtera;
+        this.movie = movies;
     }
     render_product_card() {
-            return  `
-            <div class="product-card swiper-slide">
-                    <div class="product-card-img-container" style="background-image: url('${this.src}')"></div>
-                    <div class="product-card-name" onclick="clickProduct(this.childNodes[1].textContent)">
-                            <h4>${this.name}</h4>
+            return `
+            <div class="fullMovie">
+                <a class="no_dec" href="./detail.html">
+                <div class="movie-img">
+                    <div class="background_list" style="background:url(
+                    ${this.image}
+                    );">
                     </div>
-                    <div class="product-card-price">
-                            <p>${this.price}</p>
-                    </div>
-                    <div class="unit">
-                            <button>-</button>
-                            <p>${this.unit}</p>
-                            <button>+</button>
-                    </div>
-            </div>
-            `;
+                </div>
+                </a>
+                <div class="movie-det">
+                    ${new movieDetail(this.a).Render()}
+                </div>
+                <img src="done.png" class="unit" on>
+            </div>`;
     }
     render_checkout() {
             return `
@@ -40,17 +42,17 @@ class WatchLaterMovie {
     }
 }
 
-class CartComponent extends HTMLElement {
+class WatchLaterComponent extends HTMLElement {
     constructor() {
             super(); 
             this.products = [];
-            this.className = "cart";
+            this.className = "watch";
             this.returnValue = "";
             this.returnCheckout = "";
-            this.productNum = 0;
+            this.watchNum = 0;
             if(JSON.parse(localStorage.getItem('products'))){
                     const productJson = JSON.parse(localStorage.getItem('products'));
-                    this.productNum = productJson.length;
+                    this.watchNum = productJson.length;
             }
             else{
                     const productJson = [];
@@ -60,12 +62,12 @@ class CartComponent extends HTMLElement {
 
     render_cart() {
             if(!JSON.parse(localStorage.getItem('products'))){
-                    this.productNum = 0;
+                    this.watchNum = 0;
             }
             this.innerHTML = `
                     <div class="shopping-cart-container">
                             <img src="./img/shopping-cart.png" alt="shopping cart" width="40">
-                            <p class="product-count" style="font-weight: bold;">${this.productNum}</p>
+                            <p class="product-count" style="font-weight: bold;">${this.watchNum}</p>
                     </div>
             `;
     }
@@ -79,7 +81,7 @@ class CartComponent extends HTMLElement {
             this.productJson.push(myProduct); //json array luuga shine jsonobject nemeh
 
             localStorage.setItem("products", JSON.stringify(this.productJson)); //local storaged jsonoo hadgalna
-            this.productNum++;
+            this.watchNum++;
             this.render_cart();//shopping-cart shinechleh
 
             this.returnValue += product.render_product_card();
@@ -109,7 +111,7 @@ class CartComponent extends HTMLElement {
     connectedCallback() {
             if(localStorage.getItem("products")){
                     this.productJson = JSON.parse(localStorage.getItem("products"));
-                    this.productNum = this.productJson.length;
+                    this.watchNum = this.productJson.length;
             }
             else{
                     this.productJson = [];
@@ -120,7 +122,7 @@ class CartComponent extends HTMLElement {
 
     }
     get productCount() {
-            return this.productNum;
+            return this.watchNum;
     }
 }
-window.customElements.define('cart-comp', CartComponent);
+window.customElements.define('later-comp', WatchLaterList);
