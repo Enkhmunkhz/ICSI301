@@ -12,8 +12,8 @@
       crossorigin="anonymous"
       async
     ></script>
-    <script type="module" src="../js/index.js"></script>
-    <script src="../js/functions.js" ></script>
+    <script type="module" src="../js/renderHome.js"></script>
+    <script src="../js/index.js" ></script>
     <title>MovieMax</title>
   </head>
 
@@ -61,14 +61,10 @@
       <div id="movie_container"></div>
     </div>
 
-    <footer class="footer">
-      <img src="../images/logo.webp" alt="logo" >
-      <address>
-        Байршил: <span>Чингисийн өргөн чөлөө, СБД, Улаанбаатар</span> <br>
-        Имэйл: <span>moviemax@mo.mn</span> <br>
-        Утас: <span>94399344</span>
-      </address>
+    <footer>
+      <moviemax-footer></moviemax-footer>
     </footer>
+    <script src="../components/header-footer.js"></script>
   </body>
 </html>
 
