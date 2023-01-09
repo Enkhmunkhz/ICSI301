@@ -17,7 +17,6 @@ class AddList extends HTMLElement {
                                         "image": this.parentNode.parentNode.parentNode.parentElement.parentElement.childNodes[1].childNodes[1].childNodes[1].style.backgroundImage.slice(5, -2),
                                         "unit": 1
                                 };
-                                console.log(this.parentNode.childNodes[1].textContent.trim(" "),"fucka");
                         list.addToCart(json);
                 });
         }

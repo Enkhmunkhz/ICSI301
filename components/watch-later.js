@@ -70,7 +70,7 @@ class WatchLaterComponent extends HTMLElement {
                 localStorage.setItem("lists", JSON.stringify(this.listJSON)); //local storaged jsonoo hadgalna
                 this.watchNum++;
                 this.render_watch();
-                this.returnValue += product.render_later_list().reduce((prevVal, curVal) => prevVal + curVal, " ");
+                this.returnValue += product.render_later_list();
         }
         jsonToCard(){
                 if(JSON.parse(localStorage.getItem('lists'))){
