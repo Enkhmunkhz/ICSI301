@@ -1,0 +1,43 @@
+main{
+    min-height: 56vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.checkout-button{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.checkout-button > button{
+    width: 12em;
+    height: 4em;
+    color: white;
+    border-radius: 4%;
+    background-color: #04CAC2;
+    z-index: 1;
+}
+
+.watch-later-lists{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3%;
+}
+.baihgui{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+/* .fullMovie{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  
+  } */

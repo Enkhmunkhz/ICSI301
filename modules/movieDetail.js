@@ -30,6 +30,7 @@ export class movieDetail{
                     `<span class="element">${element}</span>`
                 )
                 .join(" ")}
+                <add-list></add-list>
             </div>
             </div>
         </div>`;
