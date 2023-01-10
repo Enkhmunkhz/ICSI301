@@ -1,5 +1,6 @@
 export class movieDetail{
     constructor(movie){
+        console.log(movie,"tseku");
         this.eps_num = movie.eps_num;
         this.name = movie.name;
         this.year = movie.year;
